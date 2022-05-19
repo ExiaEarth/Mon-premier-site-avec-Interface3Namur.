@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Premier site web</title>
+        <meta name="description" content="Ceci sont mes premier tableau">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/tableau.css">
+    </head>
+
+<body>
+    <header>
+        <div>
+            <!-- attent pour toa banniere -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"> accueille </a></li>
+                <li><a href="javascript.html">Javascript</a></li>
+                <li><a href="tableau.html">tableau</a></li>
+                <li><a href="formulair.html">formulair</a></li>
+                <li><a href="https://www.interface3namur.be/" target="_blank">Interface3Namur</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Les tableau</h1>
+        <section>
+            <h2>Mise en forme de tableau</h2>
+                <article>
+                    <h3> Tableau en colone(1 tr composer de th)</h3>
+                    <table class="table1">
+                        <tr>
+                            <th>Titre1</th>
+                            <th>Titre2</th>
+                            <th>Titre3</th>
+                            <th>Titre4</th>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>
+                            <td>16</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                        </tr>
+                    </table>
+
+                </article>
+
+                <article>
+                    <h3> Tableau organiser en ligne(1er  élément de chaque tr est un th)</h3>
+                    <table class="table1 table2 ">
+                        <tr>
+                            <th scope="col">Titre de ligne1</th>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">Titre de ligne 2</th>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">Titre de ligne 3</th>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">Titre de ligne4</th>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                        </tr>
+                    </table>
+                </article>
+
+                <article>
+                    <h3>Tableau organiser en ligne et colonnes</h3>
+                    <table class="table1 table2 table3">
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Titre Colonne1</th>
+                            <th scope="col">Titre Colonne2</th>
+                            <th scope="col">Titre colonne3</th>
+                        </tr>
+                        <tr>
+                            <th>Titre ligne1</th>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">Titre ligne2</th>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">Titre ligne3</th>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">Titre ligne4</th>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">Titre ligne5</th>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>
+                        </tr>
+                    </table>
+                </article>
+
+                <article>
+                    <h3>Tableau avec en-tête,corps et pied de page.</h3>
+                    <table class="table1">
+                        <caption>Salaire des emplyées</caption>
+                        <thead>
+                            <tr>
+                                <th>Nom de l'employé</th>
+                                <th>Salaire</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Setsuna</td>
+                                <td>2000</td>
+                            </tr>
+                            <tr>
+                                <td>Alice</td>
+                                <td>1900</td>
+                            </tr>
+                            <tr>
+                                <td>Mia</td>
+                                <td>1800</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Total</th>
+                                <td>5700</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </article>
+                <article>
+                    <h3>Fusion des cellule de colonnes</h3>
+                    <table class="table1">
+                        <tr>
+                            <th>Titre col1</th>
+                            <th>Titre Col2</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">5</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                    </table>
+                </article>
+                <article>
+                    <h3>Fusioner des cellule ligne(ronwspan)</h3>
+                    <table class="table1">
+                        <tr>
+                            <th>Titre col1</th>
+                            <th>Titre col2</th>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">1</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>5</td>
+                        </tr>
+                    </table>
+                </article>
+                <article>
+                    <h3>L'élément colgroup </h3>
+                    <table class="table1 table4">
+                        <caption>Vacances</caption>
+                        <colgroup>
+                            <col>
+                            <col>
+                            <col span="2" class="vacances">
+                            <col>
+                        </colgroup>
+                    <tr>
+                        <th>Mai</th>
+                        <th>Juin</th>
+                        <th>Juillet</th>
+                        <th>Aout</th>
+                        <th>septembre</th>
+                        </tr>
+                    <tr>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                        </tr>
+                        <tr>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                        </tr>
+                        <tr>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                        </tr>
+                        <tr>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                        </tr>
+                        <tr>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                        </tr>
+                    </table>
+                </article>
+<!-------- DEBUT DES EXERS---------------------------------------------------------------------------------------------------------------- -->
+                <h2>Exercice</h2>
+                <article>
+                    <h3>Exercice n°1</h3>
+                    <table class="table5">
+                        <caption class="titre1">Tableau</caption>
+                        <tbody>
+                            <tr>
+                                <th class="nopr">Nom et prénom</th>
+                                <th class="adresse">Adresse e-mail</th>
+                                <th class="naissance">Date de naissance</th>
+                            </tr>
+                            <tr>
+                                <td class="personnage1">Dana <span>Smith</span></td>
+                                <td class="mail1">dana@smith.com</td>
+                                <td class="date1">29/09/79</td>
+                            </tr>
+                            <tr>
+                                <td class="personnage1">John <span>Doe</span></td>
+                                <td class="mail1">j.doe@skynet.com</td>
+                                <td class="date1">05/05/88</td>
+                            </tr>
+                            <tr>
+                                <td class="personnage1">Alex'sacha' <span>Trusk</span></td>
+                                <td class="mail1">sacha@trusk.com</td>
+                                <td class="date1">12/02/91</td>
+                            </tr>
+                            <tr>
+                                <td class="personnage1">Marie <span>Collin</span></td>
+                                <td class="mail1">marie.collin@live.be</td>
+                                <td class="date1">07/04/53</td>
+                            </tr>
+                            <tr>
+                                <td class="personnage1">Damian <span>De Konings</span></td>
+                                <td class="mail1">damian@de-konings.com</td>
+                                <td class="date1">27/06/84</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+                <article>
+                    <h3>Exercice n°1.2</h3>
+                    <table class="table6">
+                        <caption>Tableau 2</caption>
+                        <tr>
+                            <th scope="col" class="nopr">Nom et prénom</th>
+                            <td>Dana <span>Smith</span></td>
+                            <td>John <span>Doe</span></td>
+                            <td>Alex <span>Trusk</span></td>
+                            <td>Marie <span>Collin</span></td>
+                            <td>Damian <span>De Konings</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="col" class="adresse">Adresse e-mail</th>
+                            <td>dana@smith.com</td>
+                            <td>j.doe@skynet.com</td>
+                            <td>sacha@trusk.com</td>
+                            <td>marie.collin@live.be</td>
+                            <td>damian@de-konings.com</td>
+                        </tr>
+                        <tr>
+                            <th scope="col" class="naissance">Date de naissance</th>
+                            <td>29/09/79</td>
+                            <td>05/05/88</td>
+                            <td>12/02/91</td>
+                            <td>07/04/53</td>
+                            <td>27/06/84</td>
+                        </tr>
+                    </table>
+                </article>
+                <article>
+                    <h2>Exercice n°2</h2>
+                    <table class="table7">
+                        <caption >Tableau 2</caption>
+                        <th>SESSION N°1</th>
+                        <th>SESSION N°2</th>
+                        <th>SESSION N°3</th>
+                        <tr>
+                            <td>Ligne N°1 - Cellule N°1</td>
+                            <td>Ligne N°1 - Cellule N°2</td>
+                            <td>Ligne N°1 - Cellule N°3</td>
+                        </tr>
+                        <tr>
+                            <td>Ligne N°2 - Cellule N°1</td>
+                            <td>Ligne N°2 - Cellule N°2</td>
+                            <td>Ligne N°2 - Cellule N°3</td>
+                        </tr>
+                        <tr>
+                            <td>Ligne N°3 - Cellule N°1</td>
+                            <td>Ligne N°3 - Cellule N°2</td>
+                            <td>Ligne N°3 - Cellule N°3</td>
+                        </tr>
+                        <tr>
+                            <td>Ligne N°4 - Cellule N°1</td>
+                            <td colspan="2">Ligne N°4 - Cellule N°2 1 N°3</td>
+                        </tr>
+                        <tr>
+                            <td>Ligne N°5 - Cellule N°1</td>
+                            <td>Ligne N°5 - Cellule N°2</td>
+                            <td>Ligne N°5 - Cellule N°3</td>
+                        </tr>
+                        <tr>
+                            <td>Ligne N°6 - Cellule N°1</td>
+                            <td>Ligne N°6 - Cellule N°2</td>
+                            <td>Ligne N°6 - Cellule N°3</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Ligne N°7 - Cellule N°1 , N°2 & N°3</td>
+                        </tr>
+                        <tr>
+                            <td>Ligne N°8 - Cellule N°1</td>
+                            <td>Ligne N°8 - Cellule N°2</td>
+                            <td>Ligne N°8 - Cellule N°3</td>
+                        </tr>
+                        <tr>
+                            <td>Ligne N°9 - Cellule N°1</td>
+                            <td>Ligne N°9 - Cellule N°2</td>
+                            <td>Ligne N°9 - Cellule N°3</td>
+                        </tr>
+                    </table>
+                </article>
+    </main>
+    <footer>
+        <h2>information</h2>
+        <p>Site web réaliser dans le cadre de la formation</p>
+        <p> <strong>Dev Full Stack JS </strong></p>
+        <p><strong> Marc Lemer</strong> &copy;2022</p>
+    </footer>
+</body>
+
+</html>

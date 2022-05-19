@@ -1,0 +1,163 @@
+/* mise en forme du 1er tableau */
+.table1 td,.table1 th{
+    border: 1px solid black;
+    text-align: center;
+    padding: 7px;
+    /* padding = espace interne */
+}
+
+.table1{
+    border-collapse: collapse;
+    width: 100%;
+    /* width=largeur du parent */
+    caption-side:bottom;
+    /* emplacement du dessu ou dessou du titre top/bottom */
+}
+
+.table1 th{
+    background-color: #214567;
+    color: white;
+}
+.table1 td:hover{
+
+    background-color: green;
+    color: white;
+}
+
+/* Mise en forme du 2 eme tableau */
+
+.table2 th{
+    width: 25%;
+}
+.table2{
+    border-collapse: separate;
+    border-spacing: 5px 10px;
+    /* horizon et verticale */
+}
+.table2 tr:nth-child(even){
+    /* nth-child permer de assombrire une case  */
+    background-color: rgb(215, 215, 215);
+}
+/* Mise en forme di tableau 3 */
+.table3{
+    empty-cells: hide;
+    border-spacing: 0;
+    /* pour conserver la mise en forme "collée */
+}
+
+.table3 td,.table3th{
+    border: .5px solid black;
+}
+/* Mise en forme table 4 */
+
+.table4{
+    width: 20%;
+}
+.vacances{
+    background-color: #214567;
+}
+
+/* ***************************************************Début des exercices ********************************************************** */
+/************************************************** Ex1 *********************************************************************/
+.table5{
+    width: 100%;
+    border: 3px solid black;
+    margin-bottom: 20px;
+    padding: 7px ;
+    caption-side:bottom;
+}
+.table5 td , .table5 th{
+    border: 2px solid black;
+    text-align: left;
+    padding: 6px;
+    margin: 15px;
+}
+/* Pemer de prendre toute la ligne */
+.table5 tr:hover{
+    background-color: #5b5d5f;
+    color: aliceblue;
+}
+
+.nopr{
+    color: rgba(255, 255, 255, 0.985);
+    background-color: rgb(56, 61, 180);
+}
+.adresse{
+    color: rgba(254, 254, 254, 0.672);
+    background-color: rgba(151, 197, 77, 0.454);
+}
+.naissance{
+    color: rgb(235, 229, 229);
+    background-color: rgb(17, 116, 18);
+}
+.personnage1{
+    color: rgb(56, 61, 180);
+}
+
+.mail1{
+    color: rgba(151, 197, 77, 0.454);
+}
+.date1{
+    color: rgb(17, 116, 18);
+}
+.titre1{
+    color: chocolate;
+}
+.table5 td span {
+    font-weight: bolder;
+    /* permet de metre un mot en gras */
+}
+
+/****************************************** EXER 1.2 **************************************************************/
+.table6{
+    width: 100%;
+    caption-side: top;
+    text-align: center;
+    margin: 15px;
+    border-bottom:black
+    
+}
+.table6 td , .table6 th{
+    border: 2px;
+    padding: 10px;
+    margin: 20px;
+}
+.nopr{
+    color: rgba(255, 255, 255, 0.985);
+    background-color: rgb(56, 61, 180);
+}
+.adresse{
+    color: rgba(254, 254, 254, 0.672);
+    background-color: rgba(151, 197, 77, 0.454);
+    border-bottom: #214567;
+}
+.naissance{
+    color: rgb(235, 229, 229);
+    background-color: rgb(17, 116, 18);
+}
+.table6 td:nth-child(even){
+    background-color: #b0b2b5;
+}
+.table6 td:hover{
+    background-color: #5b5d5f;
+    color: aliceblue;
+}
+.table6 td span {
+    font-weight: bolder;
+}
+
+/* *******************************************************************EXER 2 ************************************************************* */
+.table7{
+    width: 100%;
+
+    padding: 7px ;
+    caption-side:top;
+}
+.table7 td , .table5 th{
+    border: 2px ;
+    text-align: left;
+    padding: 6px;
+    margin: 15px;
+    text-align: center;
+
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Premier site web</title>
+        <meta name="description" content="Ceci sont mes premier formulaire">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/formulaire.css">
+    </head>
+
+<body>
+    <header>
+        <div>
+            <!-- attent pour ta banniere -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"> accueille </a></li>
+                <li><a href="javascript.html">Javascript</a></li>
+                <li><a href="tableau.html">tableau</a></li>
+                <li><a href="formulair.html">formulair</a></li>
+                <li><a href="https://www.interface3namur.be/" target="_blank">Interface3Namur</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Mes formulaire</h1>
+        <section>
+                <h3>La balise input</h3>
+                <input type="text">
+                <input type="color">
+                <input type="file">
+                <input type="checkbox">
+                <input type="date">
+                <input type="range">
+                <input type="password">
+            </article>
+        </section>
+
+        <article>
+            <h3>Mise en place et en forme d'un formulaire</h3>
+            <form action="" method="get">
+
+                <fieldset>
+                    <legend> Connexion</legend>
+                    <label for="user_name"> Nom de l'utilisateur : </label>
+                    <input type="text" name="user_name" id="user_name">
+
+                    <label for="user_pw"> Mode de passe :</label>
+                    <input type="password" name="user_pw" id="user_pw">
+                </fieldset>
+                <input type="submit" value=Envoyer>
+            </form>
+        </article>
+
+        <article>
+            <h3>Utilisation du fieldset</h3>
+            <form action="" method="get">
+                <fieldset>
+                    <legend> Connexion</legend>
+                    <label for="userfirstName">Prénom</label>
+                    <input type="text" name="userfirstName" id="userfirstName" placeholder="Prénom d'utilisateur">
+
+                    <label for="userlastName" id="userlastName">Nom :</label>
+                    <input type="text" name="userlastName" id="userlastName" placeholder="Nom d'utilisateur">
+
+                    <label for="mail" name="userMail" id="userMail"></label>
+                </fieldset>
+
+                <fieldset>Votre message</fieldset>
+                <label for="userMsg">Entrez votre message ici :</label>
+                <input type="textaera" name="userMsg" id="userMsg" placeholder="Message">
+
+                <input type="submit"value="Envoyer">
+            </form>
+        </article>
+    </main>
+    <footer>
+        <h2>information</h2>
+        <p>Site web réaliser dans le cadre de la formation</p>
+        <p> <strong>Dev Full Stack JS </strong></p>
+        <p><strong> Marc Lemer</strong> &copy;2022</p>
+    </footer>
+</body>
+
+</html>
